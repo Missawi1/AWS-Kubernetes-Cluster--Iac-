@@ -47,7 +47,7 @@ module "eks" {
   subnet_ids               = module.vpc.private_subnets
   control_plane_subnet_ids = module.vpc.intra_subnets
 
-  workers_group_default = {
+  workers_group_defaults = {
     root_volume_type = "gp2"
   }
 
