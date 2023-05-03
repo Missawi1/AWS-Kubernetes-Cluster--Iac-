@@ -19,7 +19,7 @@ data "aws_caller_identity" "current" {}
 data "aws_availability_zones" "available" {}
 
 locals {
-  name            = "ex-${replace(basename(path.cwd), "_", "-")}"
+  name            = "vpro-app"
   cluster_version = "1.24"
   region          = "eu-west-1"
 
