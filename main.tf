@@ -17,7 +17,7 @@ provider "kubernetes" {
 data "aws_caller_identity" "current" {}
 data "aws_availability_zones" "available" {}
 
-local {
+locals {
   name            = "ex-${replace(basename(path.cwd), "_", "-")}"
   cluster_version = "1.24"
   region          = "eu-west-1"
